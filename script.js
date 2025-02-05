@@ -10,7 +10,7 @@ async function searchFidePlayer() {
   resultDiv.innerHTML = "🔍 Searching...";
 
   try {
-    // Build the URL with the player's name as a path parameter
+   
     const apiUrl = `https://withered-darkness-1b21.wcloudflare247.workers.dev/fide/${encodeURIComponent(playerInput)}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
