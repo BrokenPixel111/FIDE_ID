@@ -9,8 +9,12 @@
 <body>
   <div class="container">
     <h1>FIDE Player Search</h1>
-    <input type="text" id="playerInput" placeholder="Enter FIDE Player Name or ID" />
-    <button onclick="searchFidePlayer()">Search</button>
+    <form class="form-inline search_bar_new" id="searchForm">
+      <input aria-label="Search" class="form-control" placeholder="Enter ID or name" type="search" id="dyn1">
+      <button class="btn btn-outline-success" type="submit" id="search_form_buton">
+         <i class="fa fa-search icon-search"></i> Search
+      </button>
+    </form>
     <div id="result"></div>
   </div>
   <script src="script.js"></script>
